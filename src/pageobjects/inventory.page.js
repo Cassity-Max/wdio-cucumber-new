@@ -8,7 +8,7 @@ class InventoryPage extends Page {
   }
 
   get btnSort() {
-    return $('//*[@data-test="product_sort_container"]');
+    return $('//*[@data-test="product-sort-container"]');
   }
 
   get productSortLowToHigh() {
@@ -17,6 +17,10 @@ class InventoryPage extends Page {
 
   get addToCart() {
     return $$('//button[text()="Add to cart"]');
+  }
+
+  get priceItem() {
+    return $$('//div[@data-test="inventory-item-price"]');
   }
 }
 

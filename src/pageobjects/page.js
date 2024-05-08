@@ -17,4 +17,8 @@ module.exports = class Page {
   get shoppingCart() {
     return $("//a[@data-test='shopping-cart-link']");
   }
+
+  get shoppingCartBadge() {
+    return $("//span[@data-test='shopping-cart-badge']");
+  }
 };
