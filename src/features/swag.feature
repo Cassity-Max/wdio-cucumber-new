@@ -23,3 +23,29 @@ Feature: The Swag Labs Website
       | performance_glitch_user | secret_sauce |
       | error_user              | secret_sauce |
       | visual_user             | secret_sauce |
+
+  Scenario: As a user, I can short the products by price
+    Given I am on the inventory page
+    When I click on the price filter
+    Then I should see the products sorted by price from low to high
+
+  Scenario: As a user, I can add a product to the cart
+    Given I am on the inventory page
+    When I click on the add to cart button for the first two products
+    Then I should see the cart badge with 2 items
+
+  Scenario: As a user, I add customer information
+    Given I am on the customerdata page
+    When I enter the customer information
+    Then I should see the customer information filled in
+    Then I click on the continue button
+
+  Scenario: As a user, I can checkout
+    Given I am on the checkout page
+    When I click on the finish button
+    Then I should see the finish page
+
+  Scenario: As a user, I can finish the checkout
+    Given I am on the complete page
+    When I click on the "backHome" button
+    Then I should see the home page
