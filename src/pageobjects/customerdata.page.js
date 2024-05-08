@@ -18,7 +18,7 @@ class CustomerData extends Page {
     return $('//input[@data-test="postalCode"]');
   }
 
-  get btnContinue() {
+  get continue() {
     return $('//*[@data-test="continue"]');
   }
 }

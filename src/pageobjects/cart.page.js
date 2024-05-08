@@ -10,6 +10,10 @@ class CartPage extends Page {
   get itemQuantity() {
     return $$("//div[@data-test='item-quantity']");
   }
+
+  get checkoutButton() {
+    return $('//*[@data-test="checkout"]');
+  }
 }
 
 module.exports = new CartPage();

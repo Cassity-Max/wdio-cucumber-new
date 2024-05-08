@@ -6,7 +6,7 @@ class CheckoutPage extends Page {
     return super.open(this.path);
   }
 
-  get btnFinish() {
+  get finish() {
     return $('//*[@data-test="finish"]');
   }
 }
