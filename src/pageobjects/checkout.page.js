@@ -1,13 +1,13 @@
 const Page = require("./page");
 
 class CheckoutPage extends Page {
-  path = "ccheckout-step-two.html";
+  path = "checkout-step-two.html";
   open() {
     return super.open(this.path);
   }
 
   get finish() {
-    return $('//*[@data-test="finish"]');
+    return $('//button[@data-test="finish"]');
   }
 }
 

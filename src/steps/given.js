@@ -1,3 +1,5 @@
+// @ts-check
+
 const { Given } = require("@wdio/cucumber-framework");
 
 const LoginPage = require("../pageobjects/login.page");
@@ -9,9 +11,9 @@ const completePage = require("../pageobjects/complete.page");
 const pages = {
   login: LoginPage,
   inventory: InventoryPage,
-  customerdataPage: customerdataPage,
-  checkoutPage: checkoutPage,
-  completePage: completePage,
+  customerdata: customerdataPage,
+  checkout: checkoutPage,
+  complete: completePage,
 };
 
 Given(/^I am on the (\w+) page$/, async (page) => {
